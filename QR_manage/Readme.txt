@@ -1,26 +1,33 @@
-*main.py�ɂ���*
+*main.pyについて*
 
-�ȉ��̃p�b�P�[�W���C���X�g�[������Ɠ����܂��B(Python 3.7.4�Ŋm�F)
-�Epyzbar
-�Enumpy
-�EOpenCV
+以下のパッケージをインストールすると動きます。(Python 3.7.4で確認)
+・pyzbar
+・numpy
+・OpenCV
 
-��L�ȊO�̃p�b�P�[�W�̓f�t�H���g�œ����Ă���̂Œǉ��̃C���X�g�[���ԉ��ł��B
-�C���X�g�[���̍ۂ̓R�}���h�v�����v�g��pip�R�}���h���g���Γ���܂�(�f�B���N�g���͓K�X�ύX���ē��͂��邱��)�B
-[�R�}���h��]
+上記以外のパッケージはデフォルトで入っているので追加のインストール花王です。
+インストールの際はコマンドプロンプトでpipコマンドを使えば入ります(ディレクトリは適宜変更して入力すること)。
+[コマンド例]
 C:\Test>pip install pyzbar
 C:\Test>pip install python-opencv
 
-�ǂݎ��̍ۂɃ��b�Z�[�W���o�邩�Ǝv���܂������ɖ��Ȃ������Ă���Ȃ疳�����Ă��\���܂���B
-�܂��AESC�L�[�������ƒ�~���܂��B���̍ۂ�WARN���b�Z�[�W�͒�~�Ɋւ��邱�ƂȂ̂Ŗ������Ă��������B
+読み取りの際にメッセージが出るかと思いますが特に問題なく動いているなら無視しても構いません。
+また、ESCキーを押すと停止します。その際のWARNメッセージは停止に関することなので無視してください。
 
 
-*meibo.csv�ɂ���*
-ID�̗�ɂ���̂�ID�ł��BQR�R�[�h�ɂ͂���ID��p���Ă��������B
-���Ȃ��ꍇ��QR_code�f�B���N�g�����ɂ���܂��B
+*meibo.csvについて*
+IDの列にあるのがIDです。QRコードにはこのIDを用いてください。
+作れない場合はQR_codeディレクトリ内にあります。
 
-*QR�R�[�h�ɂ���
-�f�t�H���g�ł�QR_Code�f�B���N�g�����ɂ�����̂��g����悤�ɂȂ��Ă��܂��B
-�K�X�ύX���Ă��g�p���������B
-�ȉ���web�T�C�g�Ȃǂō쐬���邱�Ƃ��\�ł��̂ŎQ�l�ɂǂ���
+*QRコードについて
+デフォルトではQR_Codeディレクトリ内にあるものが使えるようになっています。
+適宜変更してご使用ください。
+以下のwebサイトなどで作成することが可能ですので参考にどうぞ
+RQコード作成サイト
+https://qr.quel.jp/
 
+*エラーについて(Windowsの場合)
+FileNotFound...みたいなエラーが出た場合、以下のサイトから
+「Visual Studio 2013 の Visual C++ 再頒布可能パッケージ 」の
+[vredist_x64.exe]をダウンロードし、手順に従ってインストールしてください
+'https://www.microsoft.com/ja-JP/download/details.aspx?id=40784'
