@@ -24,7 +24,7 @@ while($rowdata=fgetcsv($fp)){
 	#echo$i;
 	$i++;
 }
-//風呂場
+//人数確認
 for($i=1;$i<count($num);$i++){
 	$data+=$num[$i][$type];
 }
